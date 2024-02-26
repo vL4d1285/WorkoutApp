@@ -19,4 +19,31 @@ extension UIView {
                                  height: height)
         addSubview(seperetor)
     }
+    
+    
+    func makeSistem(_ button: UIButton) {
+        button.addTarget(self, action: #selector(handleIn), for: [
+            .touchDown,
+            .touchDragInside
+        ])
+        
+        button.addTarget(self, action: #selector(handleOut), for: [
+            .touchDragInside,
+            .touchUpInside,
+            .touchUpOutside,
+            .touchDragExit,
+            .touchCancel
+        ])
+    }
+    
+    
+    @objc func handleIn() {
+        UIView.animate(withDuration: 0.15) { self.alpha = 0.55 }
+    }
+    
+    @objc func handleOut() {
+        UIView.animate(withDuration: 0.15) { self.alpha = 1 }
+    }
+    
+    
 }
