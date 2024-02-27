@@ -13,6 +13,12 @@ final class OverviewNavBar: BaseView {
     private let allWorkoutsButton = SecondaryButton()
     private let addButton = UIButton()
     
+    private let weekView: UIView = {
+       let view = UIView()
+        view.backgroundColor = .blue.withAlphaComponent(0.2)
+        return view
+    }()
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         addBottomBorder(with: Resources.Colors.separator,
@@ -31,9 +37,12 @@ final class OverviewNavBar: BaseView {
 extension OverviewNavBar {
     override func addViews() {
         super.addViews()
-        addSubview(titleLabel)
-        addSubview(allWorkoutsButton)
-        addSubview(addButton)
+        addView(titleLabel)
+        addView(allWorkoutsButton)
+        addView(addButton)
+        addView(weekView)
+        
+        
     }
     
     override func layoutViews() {
@@ -52,7 +61,13 @@ extension OverviewNavBar {
             
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15)
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            
+            weekView.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: 15),
+            weekView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            weekView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+            weekView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
+            weekView.heightAnchor.constraint(equalToConstant: 47)
         
         ])
     }
@@ -62,18 +77,14 @@ extension OverviewNavBar {
         
         backgroundColor = .white
         
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = Resources.Strings.NavBar.overview
         titleLabel.textColor = Resources.Colors.darkGrey
         titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
         
-        allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
         allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
                 
-        addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.setImage(Resources.Images.Common.add, for: .normal)
-    
+            
     }
     
 }
