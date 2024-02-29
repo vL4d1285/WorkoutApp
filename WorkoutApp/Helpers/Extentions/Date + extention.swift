@@ -18,7 +18,7 @@ extension Date {
     var startOfWeek: Date {
         let components = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
         guard let firstDay = calendar.date(from: components) else { return self}        
-        return calendar.date(byAdding: .day, value: 1, to: firstDay) ?? self
+        return calendar.date(byAdding: .day, value: 0, to: firstDay) ?? self
     }
     
     

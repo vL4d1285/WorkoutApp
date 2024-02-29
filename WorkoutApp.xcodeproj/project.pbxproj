@@ -20,7 +20,7 @@
 		D096CF9C2B741475008FCF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D096CF9A2B741475008FCF5E /* LaunchScreen.storyboard */; };
 		D096CFA72B741A42008FCF5E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096CFA62B741A42008FCF5E /* TabBarController.swift */; };
 		D096CFAA2B741BD8008FCF5E /* UIColor + extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096CFA92B741BD8008FCF5E /* UIColor + extention.swift */; };
-		D096CFAD2B741C96008FCF5E /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096CFAC2B741C96008FCF5E /* Resources.swift */; };
+		D096CFAD2B741C96008FCF5E /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096CFAC2B741C96008FCF5E /* R.swift */; };
 		D0B42F1B2B8A84B300E00E76 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B42F1A2B8A84B300E00E76 /* SecondaryButton.swift */; };
 		D0EE287C2B8D18CD003220A9 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE287B2B8D18CD003220A9 /* OverviewNavBar.swift */; };
 		D0EE287E2B8D1938003220A9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE287D2B8D1938003220A9 /* BaseView.swift */; };
@@ -45,7 +45,7 @@
 		D096CF9D2B741475008FCF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D096CFA62B741A42008FCF5E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D096CFA92B741BD8008FCF5E /* UIColor + extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + extention.swift"; sourceTree = "<group>"; };
-		D096CFAC2B741C96008FCF5E /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D096CFAC2B741C96008FCF5E /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		D0B42F1A2B8A84B300E00E76 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		D0EE287B2B8D18CD003220A9 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		D0EE287D2B8D1938003220A9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				D096CFAB2B741BF1008FCF5E /* Extentions */,
-				D096CFAC2B741C96008FCF5E /* Resources.swift */,
+				D096CFAC2B741C96008FCF5E /* R.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 				D09661582B8A3B5700F24F6C /* SettingsController.swift in Sources */,
 				D0B42F1B2B8A84B300E00E76 /* SecondaryButton.swift in Sources */,
 				D096CF902B741473008FCF5E /* AppDelegate.swift in Sources */,
-				D096CFAD2B741C96008FCF5E /* Resources.swift in Sources */,
+				D096CFAD2B741C96008FCF5E /* R.swift in Sources */,
 				D096615A2B8A3B6900F24F6C /* ProgressController.swift in Sources */,
 				D096CF922B741473008FCF5E /* SceneDelegate.swift in Sources */,
 				D0EE287E2B8D1938003220A9 /* BaseView.swift in Sources */,
